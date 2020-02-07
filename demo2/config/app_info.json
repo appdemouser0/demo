@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "cdn_url": "https://raw.githubusercontent.com/appdemouser0/demo/master/",
+    "app_name": "demo1",
+    "commonFiles": "client.zip",
+    "appFiles": "demo2.zip",
+    "firstScreen": "demo2/layouts/main_screen.json",
+    "extras": ""
+}
