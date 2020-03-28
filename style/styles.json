@@ -25,9 +25,9 @@
 			},
 			"label": {
 				"primary": {
-					"base": "{colorBlue.value}",
+					"base": "{colorPurple.value}",
 					"size": "{fontSizeNormal.value}",
-					"font": "{fontArial.value}"
+					"font": "{fontRobotic.value}"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 				"primary": {
 					"radius": "{radiusCustom2.value}",
 					"width": "{border2.value}",
-					"color": "{colorGreen.value}"
+					"color": "{colorBlue.value}"
 				}
 			}
 		}
