@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Style Demo Page</title>
+</head>
+
+<body>
+
+    <p type="text" id="demolabel">Styles Demo</p>
+
+    <input type="text" id="demoinput" name="demoinput"><br><br>
+
+    <script>
+        var styles = {};
+        var tokens = {};
+
+        getStyle().then(style => {
+            styles = style;
+            getToken().then(token => {
+                tokens = token;
+                this.applyStyle();
+            });
+        });
+
+        function applyStyle() {
+            var backgroundColor = styles["color"]["background"]["textfield"]["primary"]["base"];
+            backgroundColor = this.getTokenValue(backgroundColor);
+            var textColor = styles["color"]["text"]["textfield"]["primary"]["base"];
+            textColor = this.getTokenValue(textColor);
+            var fontSize = styles["color"]["text"]["textfield"]["primary"]["size"];
+            fontSize = this.getTokenValue(fontSize);
+            var font = styles["color"]["text"]["textfield"]["primary"]["font"];
+            font = this.getTokenValue(font);
+            var borderColor = styles["color"]["border"]["textfield"]["primary"]["color"];
+            borderColor = this.getTokenValue(borderColor);
+            var borderRadius = styles["color"]["border"]["textfield"]["primary"]["radius"];
+            borderRadius = this.getTokenValue(borderRadius);
+
+            var labelColor = styles["color"]["text"]["label"]["primary"]["base"];
+            labelColor = this.getTokenValue(labelColor);
+            var labelFontSize = styles["color"]["text"]["label"]["primary"]["size"];
+            labelFontSize = this.getTokenValue(labelFontSize);
+            var labelFont = styles["color"]["text"]["label"]["primary"]["font"];
+            labelFont = this.getTokenValue(labelFont);
+
+            // TextField
+            var textField = document.getElementById("demoinput");
+            textField.placeholder = "Enter Something...";
+            textField.style.backgroundColor = backgroundColor;
+            textField.style.border = 'solid';
+            textField.style.borderColor = borderColor;
+            textField.style.color = textColor;
+            textField.style.fontSize = fontSize;
+            textField.style.fontFamily = font;
+            textField.style.borderRadius = borderRadius + "px";
+
+            // Label
+            var label = document.getElementById("demolabel");
+            label.style.color = labelColor;
+            label.style.fontSize = labelFontSize;
+            label.style.fontFamily = labelFont; 
+        }
+
+        function getTokenValue(input) {
+            if (input.charAt(0) === '{' && input.charAt(input.length - 1) === '}') {
+                input = input.slice(1);
+                input = input.substring(0, input.length - 1);
+                var keys = input.split(".");
+                input = tokens[keys[0]][keys[1]];
+            }
+            return input;
+        }
+
+        async function getStyle() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/BharathRamakrishnanTS/Demo/master/style/styles.json");
+                return response.json();
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        async function getToken() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/BharathRamakrishnanTS/Demo/master/style/tokens.json");
+                return response.json();
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
