@@ -1,0 +1,44 @@
+{
+	"color": {
+		"background": {
+			"textfield": {
+				"primary": {
+					"base": "{colorWhite.value}",
+					"focus": "{colorWhite.value}",
+					"disabled": "{colorGray.value}"
+				}
+			},
+			"label": {
+				"primary": {
+					"base": "{colorWhite.value}"
+				}
+			}
+		},
+		"text": {
+			"textfield": {
+				"primary": {
+					"base": "{colorMagenta.value}",
+					"disabled": "{colorBlack.value}",
+					"size": "{fontSizeNormal.value}",
+					"font": "{fontRobotic.value}"
+				}
+			},
+			"label": {
+				"primary": {
+					"base": "{colorPurple.value}",
+					"size": "{fontSizeNormal.value}",
+					"font": "{fontRobotic.value}"
+				}
+			}
+		},
+		"border": {
+			"textfield": {
+				"primary": {
+					"radius": "{radiusCustom2.value}",
+					"width": "{border2.value}",
+					"color": "{colorBlue.value}"
+				}
+			}
+		}
+	}
+}
