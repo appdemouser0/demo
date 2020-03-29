@@ -17,17 +17,17 @@
 		"text": {
 			"textfield": {
 				"primary": {
-					"base": "{colorMagenta.value}",
+					"base": "{colorBlack.value}",
 					"disabled": "{colorBlack.value}",
 					"size": "{fontSizeNormal.value}",
-					"font": "{fontRobotic.value}"
+					"font": "{fontInter.value}"
 				}
 			},
 			"label": {
 				"primary": {
 					"base": "{colorBlack.value}",
 					"size": "{fontSizeNormal.value}",
-					"font": "{fontRobotic.value}"
+					"font": "{fontInter.value}"
 				}
 			}
 		},
