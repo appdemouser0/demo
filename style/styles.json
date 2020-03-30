@@ -26,7 +26,7 @@
 			"label": {
 				"primary": {
 					"base": "{colorBlack.value}",
-					"size": "{fontSizeNormal.value}",
+					"size": "{fontSizeBig.value}",
 					"font": "{fontInter.value}"
 				}
 			}
