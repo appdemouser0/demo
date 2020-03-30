@@ -17,7 +17,7 @@
 		"text": {
 			"textfield": {
 				"primary": {
-					"base": "{colorBlack.value}",
+					"base": "{colorRed.value}",
 					"disabled": "{colorBlack.value}",
 					"size": "{fontSizeBig.value}",
 					"font": "{fontInter.value}"
@@ -25,7 +25,7 @@
 			},
 			"label": {
 				"primary": {
-					"base": "{colorBlack.value}",
+					"base": "{colorRed.value}",
 					"size": "{fontSizeBig.value}",
 					"font": "{fontInter.value}"
 				}
@@ -34,9 +34,9 @@
 		"border": {
 			"textfield": {
 				"primary": {
-					"radius": "{radiusCustom1.value}",
+					"radius": "{radiusCustom2.value}",
 					"width": "{border3.value}",
-					"color": "{colorBlack.value}"
+					"color": "{colorRed.value}"
 				}
 			}
 		}
