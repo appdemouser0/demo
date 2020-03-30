@@ -34,7 +34,7 @@
 		"border": {
 			"textfield": {
 				"primary": {
-					"radius": "{radiusCustom2.value}",
+					"radius": "{radiusCustom1.value}",
 					"width": "{border3.value}",
 					"color": "{colorBlack.value}"
 				}
