@@ -19,7 +19,7 @@
 				"primary": {
 					"base": "{colorBlack.value}",
 					"disabled": "{colorBlack.value}",
-					"size": "{fontSizeNormal.value}",
+					"size": "{fontSizeBig.value}",
 					"font": "{fontInter.value}"
 				}
 			},
