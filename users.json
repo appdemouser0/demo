@@ -1,0 +1,28 @@
+{
+    "name": "userList",
+    "user": [{
+        "email": "siva@gmail.com",
+        "password": "654321",
+        "user_id": "1",
+        "last_name": "S",
+        "first_name": "Siva"
+    }, {
+        "email": "chandran@gmail.com",
+        "password": "123456",
+        "user_id": "2",
+        "last_name": "S",
+        "first_name": "Chandran"
+    }, {
+        "email": "siva4avis@gmail.com",
+        "password": "admin@123",
+        "user_id": "3",
+        "last_name": "Siva",
+        "first_name": "Siva"
+    }, {
+        "email": "siva4siva@gmail.com",
+        "password": "Admin@123",
+        "user_id": "4",
+        "last_name": "Siva",
+        "first_name": "Siva"
+    }]
+}
