@@ -19,10 +19,10 @@
         "last_name": "Siva",
         "first_name": "Siva"
     }, {
-        "email": "siva4siva@gmail.com",
-        "password": "Admin@123",
+        "email": "test@gmail.com",
+        "password": "admin123",
         "user_id": "4",
-        "last_name": "Siva",
-        "first_name": "Siva"
+        "last_name": "Test",
+        "first_name": "User"
     }]
 }
